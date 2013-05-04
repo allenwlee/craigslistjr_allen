@@ -1,17 +1,26 @@
 <%=erb :_nav, layout: false%>
 <div class="container">
   <table>
-    <tr>
-      <th>Title </th>
-      <th>Price  </th>
-      <th>Description  </th>
-      <th>Contact  </th>
-    </tr>
-    <tr>
-      <td><%= @post.title %></td>
-      <td><%= @post.price %></td>
-      <td><%= @post.description %></td>
-      <td><%= @post.email %></td>
+      
+      <tr>
+        <td><strong>Category</strong></td>
+        <td><%= @post.category.text %></td>
+      </tr>
+      <tr>
+        <td><strong>Title</strong></td>
+        <td><%= @post.title %></td>
+      </tr>
+      <tr>
+        <td><strong>Description</strong></td>
+        <td><%= @post.description %></td>  
+      </tr>
+      <tr>
+        <td><strong>Price</strong></td>
+        <td>$<%= @post.price %>.00</td>
+      </tr>
+      <tr>
+        <td><strong>Contact</strong></td>
+        <td><%= @post.email %></td>
       </tr>
     </table>
 </div>

@@ -2,6 +2,11 @@ li {
   text-align: top;
 }
 
+table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
 .nav li {
   float:left;
   list-style-type: none;

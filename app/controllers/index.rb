@@ -17,9 +17,15 @@ get '/post/:id' do
   erb :post
 end
 
-get '/post/create' do
+get '/create/post' do
+
+  erb :create_post
 end
 
+post '/post' do
+  @post = Post.create(title: params[:title], description: params[:description], email: params[:email], price: params[:price], category_id: Category.find_by_text(params[:category]).id)
+  erb :post
+end
 
 get '/post/:id/edit' do
 end
