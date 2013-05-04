@@ -1,0 +1,19 @@
+<%=erb :_nav, layout: false%>
+<div class="container">
+  <h1>Categories</h1>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>category</th>
+    </tr>
+
+    <% @categories.each do |c| %>
+    <tr>
+      <td><%=c.id%></td>
+      <td><%=c.text%></td>
+    </tr>
+    <%end%>
+    
+  </table>
+  
+</div>
