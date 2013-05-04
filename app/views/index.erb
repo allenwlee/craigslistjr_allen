@@ -5,5 +5,40 @@
 
 </div>
 <div class="container">
-  <h2>Listings</h1>
+  <h1>Listings</h1>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>title</th>
+      <th>price</th>
+      <th>category</th>
+    </tr>
+
+    <% @posts.each do |p| %>
+    <tr>
+      <td>
+        <a href=/post/<%=p.id%>>
+          <%=p.id%>
+        </a>
+      </td>
+      <td>
+        <a href=/post/<%=p.id%>>
+          <%=p.title%>
+        </a>
+      </td>
+      <td>
+        <a href=/post/<%=p.id%>>
+          <%=p.price%>
+        </a>
+      </td>
+      <td>
+        <a href=/category/<%=p.category_id%>>
+          <%=p.category_id%>
+        </a>
+      </td>
+    </tr>
+    <%end%>
+    
+  </table>
+  
 </div>

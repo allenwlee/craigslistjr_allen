@@ -9,8 +9,16 @@
 
     <% @categories.each do |c| %>
     <tr>
-      <td><%=c.id%></td>
-      <td><%=c.text%></td>
+      <td>
+        <a href=/category/<%=c.id%>>
+          <%=c.id%>
+        </a>
+      </td>
+      <td>
+        <a href=/category/<%=c.id%>>
+          <%=c.text%>
+        </a>
+      </td>
     </tr>
     <%end%>
     

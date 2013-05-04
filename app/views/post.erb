@@ -1,0 +1,17 @@
+<%=erb :_nav, layout: false%>
+<div class="container">
+  <table>
+    <tr>
+      <th>Title </th>
+      <th>Price  </th>
+      <th>Description  </th>
+      <th>Contact  </th>
+    </tr>
+    <tr>
+      <td><%= @post.title %></td>
+      <td><%= @post.price %></td>
+      <td><%= @post.description %></td>
+      <td><%= @post.email %></td>
+      </tr>
+    </table>
+</div>
